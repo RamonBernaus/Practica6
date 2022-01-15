@@ -1,5 +1,9 @@
-/**/
+/*1. Escriu una funció anomenada “QuiEsIntegrantDAquestGrup” que, rebi com a
+paràmetre un número enter i, i retorni el membre i-ésim del grup. Si no hi ha
+membre i-ésim ha de tornar una cadena buida */
 package practica6_UF2;
+
+import java.util.Scanner;
 
 /**
  *
@@ -7,11 +11,22 @@ package practica6_UF2;
  */
 public class Ex1 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    static int QuiEsIntegrantDAquestGrup() {
+        int Ramon, Eric;
+        Ramon = 1;
+        Eric = 2;
+        return Ramon;
+
     }
-    
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int numero1;
+        System.out.println("Digues un  numero");
+        numero1 = s.nextInt();
+        if (numero1 == 1) {
+            System.out.println("L'integrant numero 1 es el Ramon"); 
+        }
+
+    }
 }
