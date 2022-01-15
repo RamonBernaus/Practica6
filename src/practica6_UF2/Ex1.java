@@ -7,25 +7,33 @@ import java.util.Scanner;
 
 /**
  *
- * @author LINKAT
+ * @author Ramon
  */
 public class Ex1 {
 
-    static int QuiEsIntegrantDAquestGrup() {
+    static boolean QuiEsIntegrantDAquestGrup() {
         Scanner s = new Scanner(System.in);
-        int numero1;
-        System.out.println("Digues un  numero");
-        numero1 = s.nextInt();
-        if (numero1 == 1) {
-            System.out.println("L'integrant numero 1 es el Ramon"); 
+        int numero;
+        boolean comprovador = false;
+        System.out.println("Digues un  numero i et direm l'integrant");
+        numero = s.nextInt();
+        if (numero == 1){
+            System.out.println("L'integrant numero 1 es el Ramon");
+            comprovador = true;
         }
-        return 
+        else if(numero==2){
+            System.out.println("L'integrant numero 2 es l'Eric");
+            comprovador = true;
+        }
+        else{
+            System.out.println("");
+            comprovador = true;
+        }
+        return comprovador;
 
     }
 
     public static void main(String[] args) {
-        
-        
-
+        QuiEsIntegrantDAquestGrup();
     }
 }
