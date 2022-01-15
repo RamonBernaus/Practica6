@@ -12,14 +12,6 @@ import java.util.Scanner;
 public class Ex1 {
 
     static int QuiEsIntegrantDAquestGrup() {
-        int Ramon, Eric;
-        Ramon = 1;
-        Eric = 2;
-        return Ramon;
-
-    }
-
-    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int numero1;
         System.out.println("Digues un  numero");
@@ -27,6 +19,13 @@ public class Ex1 {
         if (numero1 == 1) {
             System.out.println("L'integrant numero 1 es el Ramon"); 
         }
+        return 
+
+    }
+
+    public static void main(String[] args) {
+        
+        
 
     }
 }
