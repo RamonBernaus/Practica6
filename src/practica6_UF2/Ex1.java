@@ -17,15 +17,13 @@ public class Ex1 {
         boolean comprovador = false;
         System.out.println("Digues un  numero i et direm l'integrant");
         numero = s.nextInt();
-        if (numero == 1){
+        if (numero == 1) {
             System.out.println("L'integrant numero 1 es el Ramon");
             comprovador = true;
-        }
-        else if(numero==2){
+        } else if (numero == 2) {
             System.out.println("L'integrant numero 2 es l'Eric");
             comprovador = true;
-        }
-        else{
+        } else {
             System.out.println("");
             comprovador = true;
         }
