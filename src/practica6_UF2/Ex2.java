@@ -27,7 +27,7 @@ public class Ex2 {
     }
 
     public static void main(String[] args) {
-        ReverseString(); //imprimim la funcio sense parametres anterior
+        ReverseString(); //Imprimim la funcio sense parametres anterior
     }
 }
 
