@@ -11,16 +11,12 @@ import java.util.Scanner;
  */
 public class Ex1 {
 
-    static boolean QuiEsIntegrantDAquestGrup() {
-        Scanner s = new Scanner(System.in);
-        int numero;
+    public static boolean QuiEsIntegrantDAquestGrup(int n) {
         boolean comprovador = false;
-        System.out.println("Digues un  numero i et direm l'integrant");
-        numero = s.nextInt();
-        if (numero == 1) {
+        if (n == 1) {
             System.out.println("L'integrant numero 1 es el Ramon");
             comprovador = true;
-        } else if (numero == 2) {
+        } else if (n == 2) {
             System.out.println("L'integrant numero 2 es l'Eric");
             comprovador = true;
         } else {
@@ -32,6 +28,6 @@ public class Ex1 {
     }
 
     public static void main(String[] args) {
-        QuiEsIntegrantDAquestGrup();
+        QuiEsIntegrantDAquestGrup(0);
     }
 }
