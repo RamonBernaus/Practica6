@@ -9,22 +9,24 @@ package practica6_UF2;
 public class Ex6 {
 
     public static String Inicials() {
-        int ContadorEspaisBlanc = 0;
-        String frase = "hola em dic josep";
-        String result = frase;
-        char[] may = frase.toCharArray();
-        for (int i = 0; i < may.length; i++) {
-            if (frase.charAt(i) == ' ') {
-                ContadorEspaisBlanc++;
-                may[0] = Character.toUpperCase(may[0]);
-                result = may[0] + result;
+        String frase = "hola em dic josep"; //Fiquem una frse com String
+        String resultat = ""; //I un resultat per a retornar
+        char[] mayus = frase.toCharArray(); //Creem un array format per chars
+        mayus[0] = Character.toUpperCase(mayus[0]); //Fem que la primera lletra es torni majuscula 
+        for (int i = 0; i < mayus.length; i++) { //Creem un bucle per a que ens capti els esais en blanc 
+            if (mayus[i] == ' ') { //Quan detecta un espai en blanc la següent lletra sera en majuscula
+                mayus[i +1] = Character.toUpperCase(mayus[i +1]); //Torne les letres a majus.
             }
         }
-
-        return result;
+        for (int a=0; a<mayus.length; a++){ //Un cop totes les primeres lletres son majus les filtrem 
+            if(Character.isUpperCase(mayus[a])){ //Filtre les lletres per a que solament passin les majus
+            resultat = resultat + mayus[a]; //Sumem les lletres que han pasat el filtre de majus 
+            }
+        }
+        return resultat; //retornem el resultat de les majus filtrades
     }
 
     public static void main(String[] args) {
-        System.out.println(Inicials());
+        System.out.println(Inicials()); //Imprimim tot el programa anterior
     }
 }
