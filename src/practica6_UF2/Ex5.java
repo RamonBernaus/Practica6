@@ -5,8 +5,6 @@ detallat a https://ca.wikipedia.org/wiki/Algorisme_d%27Euclides
  */
 package practica6_UF2;
 
-
-
 /**
  *
  * @author Eric
@@ -31,6 +29,6 @@ public class Ex5 {
     }
 
     public static void main(String[] args) {
-  System.out.println(MCD_Euclides());
+        System.out.println(MCD_Euclides());
     }
 }
