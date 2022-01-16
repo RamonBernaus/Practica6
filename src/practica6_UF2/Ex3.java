@@ -4,7 +4,7 @@ package practica6_UF2;
 
 /**
  *
- * @author Ramon
+ * @author Eric
  */
 public class Ex3 {
     public static int Maxim(){
