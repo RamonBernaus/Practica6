@@ -16,6 +16,7 @@ public class Ex4 {
         numero = numero_aleatori.nextInt(6) + 1;
         return numero;
     }
+
     public static void main(String[] args) {
         System.out.println("Tires un dau i surt... " + Dau());
     }
