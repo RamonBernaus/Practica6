@@ -11,10 +11,10 @@ import java.util.Scanner;
 public class Ex2 {
 
     public static void ReverseString() {
-        String str = "Hola", nstr = ""; 
+        String str = "Hola", nstr = "";
         //Creem 2 string str i nstr un per a la paraula normal (str) i l'altre per la paraula al reves(nstr)
         char paraula;
-        
+
         System.out.print("Paraula normal: ");
         System.out.println("Hola");
         //Imprimim la paraula del dret
@@ -30,4 +30,3 @@ public class Ex2 {
         ReverseString(); //Imprimim la funcio sense parametres anterior
     }
 }
-
